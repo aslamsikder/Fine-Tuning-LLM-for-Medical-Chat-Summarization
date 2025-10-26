@@ -44,6 +44,11 @@ Create a `.env` file in the project root:
 ```
 HF_TOKEN = "your_HF_TOKEN_here"
 ```
+### Run the serve
+```
+python src/app.py
+
+```
 
 ---
 
@@ -53,6 +58,10 @@ The project is organized into a modular structure to separate concerns, making i
 Fine-Tuning LLM for Medical Chat Summarization/
 ├── .env                                # All API Key is stored here
 ├── .gitignore                          # Specifies files for Git to ignore
+├── data/
+|   ├─ medical_dialogue_test.xlsx
+|   ├─ medical_dialogue_train.csv
+│   └─ medical_dialogue_validation.xlsx
 ├── research/
 │   └── fine-tuning-experiment.ipynb    # First I explored the full project here before writing moduler structure code
 ├── src/                                # Start Modular Coding
